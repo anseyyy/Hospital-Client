@@ -1,0 +1,381 @@
+.doctor-appointment-premium-section {
+  padding: 4rem 1.5rem 4.5rem;
+  background: radial-gradient(circle at top left, #f7fbfd 0, #e5f2f6 100%);
+  color: #0b1b3b;
+}
+
+.breadcrumb-premium {
+  font-size: 0.9rem;
+  color: #64748b;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-link {
+  color: #0f9baa;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #0b6a76;
+}
+
+.breadcrumb-separator {
+  color: #94a3b8;
+}
+
+.breadcrumb-current {
+  font-weight: 600;
+  color: #475569;
+}
+
+.page-title-premium {
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  color: #0b1b3b;
+}
+
+.doctor-grid-premium {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.25rem 1.8rem;
+  justify-items: center;
+}
+
+.doctor-card-premium {
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(15, 26, 71, 0.12);
+  padding: 1.8rem 1.4rem 2.1rem;
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
+}
+
+.doctor-card-premium:hover {
+  box-shadow: 0 28px 65px rgba(15, 26, 71, 0.2);
+  transform: translateY(-8px);
+}
+
+.doctor-image-premium {
+  border-radius: 14px;
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  margin-bottom: 1.3rem;
+}
+
+.doctor-name-premium {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.35rem;
+  color: #0f9baa;
+  text-align: center;
+}
+
+.doctor-title-premium,
+.doctor-qualifications-premium,
+.doctor-hospital-premium {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0.1rem 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.doctor-description-premium {
+  font-size: 0.95rem;
+  color: #475569;
+  margin: 0.75rem 0 1.2rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.appointment-button-premium {
+  background: linear-gradient(135deg, #0f9baa, #0b6a76);
+  border: none;
+  padding: 0.6rem 1.6rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 260px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.appointment-button-premium:hover,
+.appointment-button-premium:focus-visible {
+  background: linear-gradient(135deg, #0b6a76, #0f9baa);
+  box-shadow: 0 10px 30px rgba(11, 27, 59, 0.3);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doctor-card-premium {
+    max-width: 100%;
+  }
+
+  .doctor-image-premium {
+    height: 200px;
+  }
+
+  .page-title-premium {
+    font-size: 1.9rem;
+  }
+}
+
+.appointment-modal-premium {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(15, 26, 71, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1100;
+  overflow: auto;
+}
+
+.appointment-form-premium {
+  position: relative;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 18px;
+  box-shadow: 0 25px 65px rgba(15, 26, 71, 0.22);
+  padding: 2rem 2.2rem 2.4rem;
+  width: 100%;
+  max-width: 430px;
+
+  /* Limit max height and enable inner scrolling */
+  max-height: 80vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment-form-title {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0b1b3b;
+  margin-bottom: 1.7rem;
+}
+
+.appointment-form-element {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  margin-top: 0.4rem;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1.8px solid #cbd5e1;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  border-color: #0f9baa;
+  box-shadow: 0 0 0 3px rgba(15, 155, 170, 0.3);
+  outline: none;
+  background-color: #f0fcff;
+}
+
+.submit-btn-premium {
+  background: linear-gradient(135deg, #0f9baa, #0b6a76);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.65rem 0;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 13px 38px rgba(15, 155, 170, 0.4);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.submit-btn-premium:hover,
+.submit-btn-premium:focus-visible {
+  background: linear-gradient(135deg, #0b6a76, #0f9baa);
+  box-shadow: 0 18px 45px rgba(11, 27, 59, 0.5);
+  outline: none;
+}
+
+.close-btn-premium {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  transition: color 0.25s ease;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.close-btn-premium:hover,
+.close-btn-premium:focus-visible {
+  color: #0f9baa;
+  outline: none;
+}
+
+/* Appointment booking section for landing page */
+.appointment-booking-section {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+  padding: 5rem 1.5rem;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.appointment-booking-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230f9baa' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+  pointer-events: none;
+}
+
+.appointment-booking-container {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.appointment-booking-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0b1b3b;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-booking-subtitle {
+  font-size: 1.2rem;
+  color: #475569;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.cancel-appointment-btn {
+  background: linear-gradient(135deg, #64748b, #475569);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(71, 85, 105, 0.3);
+}
+
+.cancel-appointment-btn:hover {
+  background: linear-gradient(135deg, #475569, #334155);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(71, 85, 105, 0.4);
+}
+
+@media (max-width: 768px) {
+  .appointment-booking-section {
+    padding: 3rem 1rem;
+  }
+  
+  .appointment-booking-title {
+    font-size: 2rem;
+  }
+  
+  .appointment-booking-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Embedded appointment form styles for landing page */
+.appointment-form-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 4rem 1.5rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+  box-shadow: 0 25px 65px rgba(15, 26, 71, 0.15);
+}
+
+.appointment-form-container {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 18px;
+  box-shadow: 0 25px 65px rgba(15, 26, 71, 0.22);
+  padding: 2.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .appointment-form-section {
+    padding: 3rem 1rem;
+    margin: 1rem 0;
+  }
+  
+  .appointment-form-container {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Scrollbar styling for WebKit browsers */
+.appointment-form-premium::-webkit-scrollbar {
+  width: 8px;
+}
+
+.appointment-form-premium::-webkit-scrollbar-thumb {
+  background-color: rgba(15, 155, 170, 0.4);
+  border-radius: 10px;
+}
+
+/* Responsive adjustment */
+
+@media (max-width: 480px) {
+  .appointment-form-premium {
+    max-width: 100%;
+    padding: 1.8rem 1.3rem 1.6rem;
+    max-height: 90vh;
+  }
+
+  .appointment-form-title {
+    font-size: 1.6rem;
+  }
+}

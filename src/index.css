@@ -1,0 +1,52 @@
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Premium Color Scheme */
+:root {
+  --primary-color: #0f9baa;
+  --primary-dark: #0b6a76;
+  --secondary-color: #0b1b3b;
+  --accent-color: #ffaa4c;
+  --background-main: #f5f7fb;
+  --background-soft: #ffffff;
+  --background-muted: #eef3ff;
+  --text-color: #1a2238;
+  --text-muted: #6b7280;
+  --shadow-soft: 0 18px 45px rgba(15, 26, 71, 0.15);
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-full: 999px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
