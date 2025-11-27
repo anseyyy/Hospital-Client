@@ -19,60 +19,60 @@ const specialties = [
     title: "Dentistry",
     description:
       "The Department of Dental and Cranio Maxillofacial Surgery at Aster...",
-    path: "/dentistry",
+    
   },
   {
     icon: <GiScalpel size={40} color="#d6ebedff" />,
     title: "Neuro Surgery",
     description:
       "The Department of Neurosurgery at Aster MIMS Kottakkal provides...",
-    path: "/neuro-surgery",
+    
   },
   {
     icon: <GiBrain size={40} color="#d6ebedff" />,
     title: "Neurology",
     description: "The Department of Neurology at Aster MIMS Kottakkal provides...",
-    path: "/neurology",
+    
   },
   {
     icon: <FaBone size={40} color="#d6ebedff" />,
     title: "Orthopaedics",
     description: "The Department of Orthopaedics at Aster MIMS Kottakkal is...",
-    path: "/orthopaedics",
+    
   },
   {
     icon: <FaHeart size={40} color="#d6ebedff" />,
     title: "Cardiology",
     description:
       "Comprehensive cardiac care with advanced diagnostics and treatments...",
-    path: "/cardiology",
+    
   },
   {
     icon: <FaEye size={40} color="#d6ebedff" />,
     title: "Ophthalmology",
     description:
       "Eye care services including cataract, retina, and vision correction...",
-    path: "/ophthalmology",
+    
   },
   {
     icon: <GiStethoscope size={40} color="#d6ebedff" />,
     title: "General Medicine",
     description: "Holistic medical care for a wide range of health conditions...",
-    path: "/general-medicine",
+   
   },
   {
     icon: <MdChildCare size={40} color="#d6ebedff" />,
     title: "Paediatrics",
     description:
       "Specialized care for infants, children, and adolescents...",
-    path: "/paediatrics",
+   
   },
   {
     icon: <FaBone size={40} color="#d6ebedff" />,
     title: "Rheumatology",
     description:
       "Expert care for arthritis, autoimmune, and musculoskeletal disorders...",
-    path: "/rheumatology",
+    
   },
 ];
 
@@ -85,12 +85,12 @@ const AllSpecialities = () => {
 
   return (
     <section className="all-specialties-premium-section">
-      <div className="container">
+      <div className="container-fluid">
         {/* Breadcrumb */}
         <nav className="breadcrumb-premium">
-          <Link to="/" className="breadcrumb-link">
+          <div className="breadcrumb-link">
             Home
-          </Link>
+          </div>
           <FaChevronRight className="breadcrumb-separator" />
           <span className="breadcrumb-current">Specialties</span>
         </nav>
@@ -105,95 +105,27 @@ const AllSpecialities = () => {
           </p>
         </header>
 
-        {/* Specialty cards - 3x3 Grid */}
-        <Row className="specialties-grid mb-4">
-          <Col xs={4} className="specialty-col p-3">
-            <button
-              onClick={() => handleClick(specialties[0].path)}
-              className="specialty-button w-100"
-              aria-label={`More about ${specialties[0].title} specialty`}
+        {/* Specialty cards - Responsive Grid */}
+        <Row className="specialties-grid g-3 g-md-4">
+          {specialties.map((specialty, index) => (
+            <Col 
+              key={index} 
+              xs={12} 
+              sm={6} 
+              md={4} 
+              lg={3} 
+              xl={3}
+              className="specialty-col"
             >
-              <SpecialtyCard {...specialties[0]} />
-            </button>
-          </Col>
-          <Col xs={4} className="specialty-col p-3">
-            <button
-              onClick={() => handleClick(specialties[1].path)}
-              className="specialty-button w-100"
-              aria-label={`More about ${specialties[1].title} specialty`}
-            >
-              <SpecialtyCard {...specialties[1]} />
-            </button>
-          </Col>
-          <Col xs={4} className="specialty-col p-3">
-            <button
-              onClick={() => handleClick(specialties[2].path)}
-              className="specialty-button w-100"
-              aria-label={`More about ${specialties[2].title} specialty`}
-            >
-              <SpecialtyCard {...specialties[2]} />
-            </button>
-          </Col>
-        </Row>
-
-        <Row className="specialties-grid mb-4">
-          <Col xs={4} className="specialty-col p-3">
-            <button
-              onClick={() => handleClick(specialties[3].path)}
-              className="specialty-button w-100"
-              aria-label={`More about ${specialties[3].title} specialty`}
-            >
-              <SpecialtyCard {...specialties[3]} />
-            </button>
-          </Col>
-          <Col xs={4} className="specialty-col p-3">
-            <button
-              onClick={() => handleClick(specialties[4].path)}
-              className="specialty-button w-100"
-              aria-label={`More about ${specialties[4].title} specialty`}
-            >
-              <SpecialtyCard {...specialties[4]} />
-            </button>
-          </Col>
-          <Col xs={4} className="specialty-col p-3">
-            <button
-              onClick={() => handleClick(specialties[5].path)}
-              className="specialty-button w-100"
-              aria-label={`More about ${specialties[5].title} specialty`}
-            >
-              <SpecialtyCard {...specialties[5]} />
-            </button>
-          </Col>
-        </Row>
-
-        <Row className="specialties-grid">
-          <Col xs={4} className="specialty-col p-3">
-            <button
-              onClick={() => handleClick(specialties[6].path)}
-              className="specialty-button w-100"
-              aria-label={`More about ${specialties[6].title} specialty`}
-            >
-              <SpecialtyCard {...specialties[6]} />
-            </button>
-          </Col>
-          <Col xs={4} className="specialty-col p-3">
-            <button
-              onClick={() => handleClick(specialties[7].path)}
-              className="specialty-button w-100"
-              aria-label={`More about ${specialties[7].title} specialty`}
-            >
-              <SpecialtyCard {...specialties[7]} />
-            </button>
-          </Col>
-          <Col xs={4} className="specialty-col p-3">
-            <button
-              onClick={() => handleClick(specialties[8].path)}
-              className="specialty-button w-100"
-              aria-label={`More about ${specialties[8].title} specialty`}
-            >
-              <SpecialtyCard {...specialties[8]} />
-            </button>
-          </Col>
+              <button
+                onClick={() => handleClick(specialty.path)}
+                className="specialty-button w-100"
+                aria-label={`More about ${specialty.title} specialty`}
+              >
+                <SpecialtyCard {...specialty} />
+              </button>
+            </Col>
+          ))}
         </Row>
       </div>
     </section>
