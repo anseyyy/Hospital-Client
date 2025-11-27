@@ -120,7 +120,7 @@ function Header() {
 
                         {/* Mobile Menu Toggle */}
                         <button 
-                            className="mobile-menu-toggle d-lg-none"
+                            className="mobile-menu-toggle d-md-none"
                             onClick={toggleMobileMenu}
                             aria-label="Toggle mobile menu"
                         >
@@ -132,7 +132,7 @@ function Header() {
 
             {/* Mobile Menu Overlay */}
             {isMobileMenuOpen && (
-                <div className="mobile-menu-overlay d-lg-none" onClick={toggleMobileMenu}>
+                <div className="mobile-menu-overlay d-md-none" onClick={toggleMobileMenu}>
                     <div className="mobile-menu" onClick={(e) => e.stopPropagation()}>
                         <div className="mobile-menu-header">
                             <div className="mobile-brand">
