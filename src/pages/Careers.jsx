@@ -15,7 +15,7 @@ function Careers() {
         {/* Hero / Intro */}
         <Row className="text-center mb-5">
           <Col lg={8} className="mx-auto">
-            <span className="pill-label">Careers at Rynott</span>
+            <span className="pill-label">Careers at WellSpring</span>
             <h1 className="careers-premium-title">
               Build a career
               <span> where every day changes lives.</span>
@@ -104,10 +104,10 @@ function Careers() {
                     to:
                   </p>
                   <a
-                    href="mailto:rynotthospital@gmail.com"
+                    href="mailto:wellspringhospital@gmail.com"
                     className="career-email-premium"
                   >
-                    rynotthospital@gmail.com
+                    wellspringhospital@gmail.com
                   </a>
                 </div>
               </Card.Body>
@@ -115,7 +115,7 @@ function Careers() {
           </Col>
         </Row>
 
-       
+
       </Container>
     </div>
   );

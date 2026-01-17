@@ -18,7 +18,7 @@ import AppointmentForm from "../components/docterCard/AppointmentForm";
 
 function Landing() {
   const [selectedDoctor, setSelectedDoctor] = useState(null);
-  
+
   // Doctor data for the hero section
   const doc = {
     name: "Dr. Amelia Verghese",
@@ -32,14 +32,14 @@ function Landing() {
         <div className="hero-premium-bg" />
         <div className="hero-premium-inner">
           <div className="hero-premium-left">
-            <span className="hero-badge">Rynott Care -  Since 1999</span>
+            <span className="hero-badge">WellSpring Care -  Since 1999</span>
             <h1>
               Compassionate care,
               <br />
               <span>powered by innovation.</span>
             </h1>
             <p>
-              Rynott Hospital connects advanced medical technology with a
+              WellSpring Hospital connects advanced medical technology with a
               warm, human touch, so every patient feels seen, heard, and
               cared for.
             </p>
@@ -49,7 +49,7 @@ function Landing() {
                 Book an appointment
                 <FontAwesomeIcon icon={faArrowRight} />
               </Link>
-              <Link to="/meetRynott" className="btn-outline-ghost">
+              <Link to="/meetWellSpring" className="btn-outline-ghost">
                 Meet our experts
               </Link>
             </div>
@@ -92,12 +92,12 @@ function Landing() {
                 </div>
               </div>
               <button
-              className="appointment-button-premium"
-              onClick={() => setSelectedDoctor(doc)}
-              aria-label={`Book appointment with ${doc.name}`}
-            >
-              Book An Appointment
-            </button>
+                className="appointment-button-premium"
+                onClick={() => setSelectedDoctor(doc)}
+                aria-label={`Book appointment with ${doc.name}`}
+              >
+                Book An Appointment
+              </button>
 
             </div>
 
@@ -125,12 +125,12 @@ function Landing() {
           <div className="appointment-booking-container">
             <h2 className="appointment-booking-title">Book Your Appointment with {selectedDoctor.name}</h2>
             <p className="appointment-booking-subtitle">Complete the form below to schedule your visit</p>
-            <AppointmentForm 
-              doctor={selectedDoctor} 
-              onClose={() => setSelectedDoctor(null)} 
+            <AppointmentForm
+              doctor={selectedDoctor}
+              onClose={() => setSelectedDoctor(null)}
             />
-            <button 
-              className="cancel-appointment-btn" 
+            <button
+              className="cancel-appointment-btn"
               onClick={() => setSelectedDoctor(null)}
             >
               Cancel Booking
@@ -142,7 +142,7 @@ function Landing() {
       {/* Highlights */}
       <section className="section-premium highlights-section">
         <div className="section-header">
-          <h2>Why patients choose Rynott</h2>
+          <h2>Why patients choose WellSpring</h2>
           <p>
             Designed around comfort, safety, and outcomes – from your first
             click to your final recovery.
@@ -198,7 +198,7 @@ function Landing() {
           <div className="about-text">
             <h2>More than a hospital, a partner in your health journey.</h2>
             <p>
-              At Rynott Hospital, every treatment plan is tailored to the
+              At WellSpring Hospital, every treatment plan is tailored to the
               individual, combining evidence‑based medicine with genuine
               empathy.
             </p>
@@ -222,8 +222,8 @@ function Landing() {
               </div>
             </div>
 
-            <Link to="/meetRynott" className="text-link">
-              Learn more about Rynott Hospital
+            <Link to="/meetWellSpring" className="text-link">
+              Learn more about WellSpring Hospital
               <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
@@ -232,7 +232,7 @@ function Landing() {
             <div className="timeline-card">
               <h3>25+ years of excellence</h3>
               <p>
-                Starting as a small nursing home, Rynott has grown into a
+                Starting as a small nursing home, WellSpring has grown into a
                 multi‑specialty center serving thousands of families.
               </p>
             </div>
@@ -276,7 +276,7 @@ function Landing() {
         <div className="section-header">
           <h2>Stories from our patients</h2>
           <p>
-            Real experiences from people who trusted Rynott with their
+            Real experiences from people who trusted WellSpring with their
             health.
           </p>
         </div>

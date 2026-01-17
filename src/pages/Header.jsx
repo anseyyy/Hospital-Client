@@ -11,7 +11,7 @@ function Header() {
     const { isAuthenticated, user, logout } = useAuth();
     const location = useLocation();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    
+
     const isActive = (path) => location.pathname === path;
 
     const handleLogout = () => {
@@ -27,7 +27,7 @@ function Header() {
     const handleLinkClick = () => {
         setIsMobileMenuOpen(false);
     };
-    
+
     return (
         <>
             <header className="header-premium">
@@ -35,9 +35,9 @@ function Header() {
                     {/* Left: Brand */}
                     <div className="header-brand">
                         <Link to={'/'} className="brand-main" onClick={handleLinkClick}>
-                            <div className="brand-mark">R</div>
+                            <div className="brand-mark">W</div>
                             <div className="brand-text">
-                                <div className="brand-name">Rynott</div>
+                                <div className="brand-name">WellSpring</div>
                                 <div className="brand-tagline">Hospital</div>
                             </div>
                         </Link>
@@ -55,11 +55,11 @@ function Header() {
                         </Link>
 
                         <Link
-                            to="/meetRynott"
-                            className={isActive("/meetRynott") ? "nav-link active" : "nav-link"}
+                            to="/meetWellSpring"
+                            className={isActive("/meetWellSpring") ? "nav-link active" : "nav-link"}
                             onClick={handleLinkClick}
                         >
-                            Meet Rynott
+                            Meet WellSpring
                         </Link>
 
                         <Link
@@ -93,7 +93,7 @@ function Header() {
                             <FaGlobe />
                             EN
                         </button>
-                        
+
                         {/* Admin Section */}
                         {isAuthenticated ? (
                             <div className="d-flex align-items-center">
@@ -112,14 +112,14 @@ function Header() {
                                 Admin Login
                             </Link>
                         )}
-                        
+
                         <Link to="/appointment" className="btn-header-primary" onClick={handleLinkClick}>
                             <FaCalendarAlt />
                             Book Appointment
                         </Link>
 
                         {/* Mobile Menu Toggle */}
-                        <button 
+                        <button
                             className="mobile-menu-toggle d-md-none"
                             onClick={toggleMobileMenu}
                             aria-label="Toggle mobile menu"
@@ -137,9 +137,9 @@ function Header() {
                         <div className="mobile-menu-header">
                             <div className="mobile-brand">
                                 <Link to={'/'} className="brand-main" onClick={handleLinkClick}>
-                                    <div className="brand-mark">R</div>
+                                    <div className="brand-mark">W</div>
                                     <div className="brand-text">
-                                        <div className="brand-name">Rynott</div>
+                                        <div className="brand-name">WellSpring</div>
                                         <div className="brand-tagline">Hospital</div>
                                     </div>
                                 </Link>
@@ -160,11 +160,11 @@ function Header() {
                             </Link>
 
                             <Link
-                                to="/meetRynott"
-                                className={isActive("/meetRynott") ? "mobile-nav-link active" : "mobile-nav-link"}
+                                to="/meetWellSpring"
+                                className={isActive("/meetWellSpring") ? "mobile-nav-link active" : "mobile-nav-link"}
                                 onClick={handleLinkClick}
                             >
-                                Meet Rynott
+                                Meet WellSpring
                             </Link>
 
                             <Link
@@ -211,7 +211,7 @@ function Header() {
                                     Admin Login
                                 </Link>
                             )}
-                            
+
                             <Link to="/appointment" className="btn-header-primary w-100 mt-2" onClick={handleLinkClick}>
                                 <FaCalendarAlt />
                                 Book Appointment

@@ -33,7 +33,7 @@ function ContactUs() {
         {/* Intro + info */}
         <Row className="mb-5 align-items-start g-4">
           <Col lg={5}>
-            <div className="pill-label">Contact Rynott</div>
+            <div className="pill-label">Contact WellSpring</div>
             <h1 className="contact-title">
               We are here
               <span> whenever you need us.</span>
@@ -61,8 +61,8 @@ function ContactUs() {
                     </div>
                     <div>
                       <span>Email</span>
-                      <a href="mailto:info@eduspherehospital.com">
-                        info@eduspherehospital.com
+                      <a href="mailto:info@wellSpringhospital.com">
+                        info@wellSpringhospital.com
                       </a>
                     </div>
                   </li>

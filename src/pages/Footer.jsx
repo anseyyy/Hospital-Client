@@ -16,9 +16,9 @@ function Footer() {
           {/* Brand + tagline */}
           <Col md={4}>
             <div className="footer-brand">
-              <div className="footer-logo-mark">R</div>
+              <div className="footer-logo-mark">W</div>
               <div>
-                <h5>Rynott Hospital</h5>
+                <h5>WellSpring Hospital</h5>
                 <p>Caring for every learner, patient, and family with empathy and expertise.</p>
               </div>
             </div>
@@ -35,7 +35,7 @@ function Footer() {
                 <Link to="/apointment">Book Appointment</Link>
               </li>
               <li>
-                <Link to="/meetRynott">Meet Rynott</Link>
+                <Link to="/meetWellSpring">Meet WellSpring</Link>
               </li>
               <li>
                 <Link to="/careers">Careers</Link>
@@ -56,8 +56,8 @@ function Footer() {
               </li>
               <li>
                 <FontAwesomeIcon icon={faEnvelope} />
-                <a href="mailto:info@rynotthospital.com">
-                  info@rynotthospital.com
+                <a href="mailto:info@wellspringhospital.com">
+                  info@wellspringhospital.com
                 </a>
               </li>
               <li>
@@ -71,7 +71,7 @@ function Footer() {
         <Row className="pt-3 mt-4 footer-bottom">
           <Col xs={12} md={6}>
             <p className="mb-0">
-              © 2025 Rynott Hospital. All rights reserved.
+              © 2025 WellSpring Hospital. All rights reserved.
             </p>
           </Col>
           <Col xs={12} md={6} className="text-md-end footer-legal">

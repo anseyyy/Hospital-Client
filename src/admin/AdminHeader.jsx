@@ -23,12 +23,12 @@ function AdminHeader() {
       <Container fluid>
         <Navbar.Brand className="admin-brand">
           <FaTachometerAlt className="me-2" />
-          Rynott Hospital Admin
+          WellSpring Hospital Admin
         </Navbar.Brand>
-        
+
         <Nav className="ms-auto d-flex align-items-center">
-          <Button 
-            variant="outline-light" 
+          <Button
+            variant="outline-light"
             size="sm"
             className="me-3 home-btn"
             onClick={handleHomeRedirect}
@@ -36,15 +36,15 @@ function AdminHeader() {
             <FaHome className="me-1" />
             Go to Website
           </Button>
-          
+
           <div className="admin-user-info me-3">
             <FaUserShield className="me-2 text-light" />
             <span className="text-light fw-semibold">{user?.name}</span>
             <small className="text-muted ms-2">({user?.role})</small>
           </div>
-          
-          <Button 
-            variant="outline-danger" 
+
+          <Button
+            variant="outline-danger"
             size="sm"
             onClick={handleLogout}
             className="admin-logout-btn"

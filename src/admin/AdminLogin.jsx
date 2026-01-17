@@ -11,7 +11,7 @@ function AdminLogin() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
-  
+
   const { login } = useAuth();
   const navigate = useNavigate();
 
@@ -27,7 +27,7 @@ function AdminLogin() {
 
     try {
       const result = await login({ email, password });
-      
+
       if (result.success) {
         toast.success("✅ Login successful! Redirecting...", {
           autoClose: 1500,
@@ -42,7 +42,7 @@ function AdminLogin() {
       toast.error("❌ Network error. Please try again.");
       console.error('Login error:', error);
     }
-    
+
     setLoading(false);
   };
 
@@ -55,7 +55,7 @@ function AdminLogin() {
               <FaUserShield className="text-primary" size={48} />
             </div>
             <h2 className="fw-bold text-dark mb-2">Admin Login</h2>
-            <p className="text-muted">Access the Rynott Hospital admin panel</p>
+            <p className="text-muted">Access the WellSpring Hospital admin panel</p>
           </div>
 
           <Form onSubmit={handleSubmit}>
@@ -115,7 +115,7 @@ function AdminLogin() {
 
           <div className="text-center mt-4">
             <small className="text-muted">
-              Demo Credentials: admin@rynott.com / admin123
+              Demo Credentials: admin@wellspringhospital.com / admin123
             </small>
           </div>
         </Card.Body>
@@ -174,7 +174,7 @@ function AdminLogin() {
           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
       `}</style>
-      
+
       <ToastContainer
         position="top-right"
         autoClose={3000}

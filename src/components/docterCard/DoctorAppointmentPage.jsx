@@ -11,7 +11,7 @@ const doctors = [
     description:
       "Dr. Arjun Nair is a leading cardiologist with 15+ years of expertise in advanced cardiac care and interventions .",
     image: "/images/dr-arjun.jpg",
-    hospital: "Rynott Heart Center, Kozhikode",
+    hospital: "WellSpring Heart Center, Kozhikode",
   },
   {
     name: "Dr. Meera Pillai",
@@ -20,7 +20,7 @@ const doctors = [
     description:
       "  Dr. Meera Pillai is a specialist in neurology, focusing on stroke, epilepsy, and neurodegenerative disease management.  ",
     image: "/images/dr-meera.jpg",
-    hospital: "Rynott Multi-specialty Hospital, Kozhikode",
+    hospital: "WellSpring Multi-specialty Hospital, Kozhikode",
   },
   {
     name: "Dr. Vivek Menon",
@@ -29,7 +29,7 @@ const doctors = [
     description:
       "Dr. Vivek Menon provides expert orthopedic care, including joint replacements, trauma treatment, and sports injury solutions.  ",
     image: "/images/dr-vivek.jpg",
-    hospital: "Rynott Orthopaedic Center, Kozhikode",
+    hospital: "WellSpring Orthopaedic Center, Kozhikode",
   },
   {
     name: "Dr. Anjali Kumar",
@@ -38,7 +38,7 @@ const doctors = [
     description:
       "Dr. Anjali Kumar delivers comprehensive pediatric services, emphasizing preventive health and chronic condition management.  ",
     image: "/images/dr-anjali-kumar.jpg",
-    hospital: "Rynott Children’s Hospital, Kozhikode",
+    hospital: "WellSpring Children’s Hospital, Kozhikode",
   },
   {
     name: "Dr. Rajesh S",
@@ -47,7 +47,7 @@ const doctors = [
     description:
       "Dr. Rajesh S is a gastroenterology expert with extensive experience in gastrointestinal diseases and advanced endoscopic care.  ",
     image: "/images/dr-rajesh.jpg",
-    hospital: "Rynott Digestive Health Center, Kozhikode",
+    hospital: "WellSpring Digestive Health Center, Kozhikode",
   },
 ];
 
