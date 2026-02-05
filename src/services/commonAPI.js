@@ -18,12 +18,9 @@ const commonAPI = async (httpMethod,url,reqBody,reqHeader)=>{
         return response;
     } catch (error) {
         console.error('API Error:', error);
-        // Return a proper error response structure
-        return {
-            data: [],
-            status: error.response?.status || 500,
-            error: true,
-            message: error.message
+        return error.response ? error.response : { 
+            status: 500, 
+            data: { message: "Network Error or Server Unreachable" } 
         };
     }
 

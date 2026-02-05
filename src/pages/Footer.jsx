@@ -7,8 +7,10 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 function Footer() {
+  const { isAuthenticated } = useAuth();
   return (
     <footer className="footer-premium">
       <Container>
@@ -42,6 +44,13 @@ function Footer() {
               </li>
               <li>
                 <Link to="/contactus">Contact Us</Link>
+              </li>
+              <li>
+                {isAuthenticated ? (
+                  <Link to="/admin">Admin Panel</Link>
+                ) : (
+                  <Link to="/admin/login">Admin Login</Link>
+                )}
               </li>
             </ul>
           </Col>

@@ -106,12 +106,7 @@ function Header() {
                                     Logout
                                 </Button>
                             </div>
-                        ) : (
-                            <Link to="/admin/login" className="btn-admin" onClick={handleLinkClick}>
-                                <FaUserShield />
-                                Admin Login
-                            </Link>
-                        )}
+                        ) : null}
 
                         <Link to="/appointment" className="btn-header-primary" onClick={handleLinkClick}>
                             <FaCalendarAlt />
@@ -205,12 +200,7 @@ function Header() {
                                         Logout
                                     </Button>
                                 </div>
-                            ) : (
-                                <Link to="/admin/login" className="btn-admin w-100" onClick={handleLinkClick}>
-                                    <FaUserShield />
-                                    Admin Login
-                                </Link>
-                            )}
+                            ) : null}
 
                             <Link to="/appointment" className="btn-header-primary w-100 mt-2" onClick={handleLinkClick}>
                                 <FaCalendarAlt />
